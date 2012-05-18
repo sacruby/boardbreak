@@ -1,3 +1,45 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header{
+	background-color: #DDD;
+	margin-bottom: 20px;
+
+	box-shadow:0px 5px 10px #EEE;
+
+	h1{
+		margin: 20px;
+	}
+}
+
+.joined_at select{
+	width:100px;
+}
+
+label{
+	display:inline;
+}
+
+#student_list{
+
+	th,td{text-align:left;}
+	.operaions{text-align:right;}
+	
+}
+
+.studentName{
+	font-size:2em;
+}
+
+.decidedtrue{
+	color:#a8b42a;
+}
+
+.decidedfalse{
+	color:#9e3921;
+}
+
+.back-btn{
+	background-image:url("img/glyphicons-halflings.png");
+}

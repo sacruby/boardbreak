@@ -15,7 +15,7 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="field joined_at">
     <%= f.label :joined_at %><br />
     <%= f.datetime_select :joined_at %>
   </div>
@@ -24,8 +24,7 @@
     <%= f.text_field :rank %>
   </div>
   <div class="field">
-    <%= f.label :decided %><br />
-    <%= f.check_box :decided %>
+    <%= f.label :decided %>&nbsp;<%= f.check_box :decided %>
   </div>
   <div class="field">
     <%= f.label :belt_size %><br />

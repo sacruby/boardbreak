@@ -1,14 +1,12 @@
-<h1>Listing students</h1>
+<h2>Students List</h2>
 
-<table>
+<table id="student_list" class="table-striped container">
   <tr>
-    <th>Name</th>
-    <th>Joined at</th>
-    <th>Rank</th>
-    <th>Decided</th>
-    <th>Belt size</th>
-    <th></th>
-    <th></th>
+    <th class="span3">Name</th>
+    <th class="span2">Joined at</th>
+    <th class="span1">Rank</th>
+    <th class="span1">Decided</th>
+    <th class="span2">Belt size</th>
     <th></th>
   </tr>
 
@@ -19,13 +17,13 @@
     <td><%= student.rank %></td>
     <td><%= student.decided %></td>
     <td><%= student.belt_size %></td>
-    <td><%= link_to 'Show', student %></td>
-    <td><%= link_to 'Edit', edit_student_path(student) %></td>
-    <td><%= link_to 'Destroy', student, confirm: 'Are you sure?', method: :delete %></td>
+    <td class="operaions"><%= link_to 'Show', student , :class=>"btn" %>
+    <%= link_to 'Edit', edit_student_path(student) , :class=>"btn btn-info" %>
+    <%= link_to 'Delete', student, confirm: 'Are you sure?', method: :delete , :class=>"btn btn-danger" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Student', new_student_path %>
+<%= link_to '+ New Student', new_student_path, :class=>"btn btn-primary" %>
