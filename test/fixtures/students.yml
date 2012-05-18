@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  joined_at: 2012-05-17 20:41:21
+  rank: MyString
+  decided: false
+  belt_size: 1
+
+two:
+  name: MyString
+  joined_at: 2012-05-17 20:41:21
+  rank: MyString
+  decided: false
+  belt_size: 1
